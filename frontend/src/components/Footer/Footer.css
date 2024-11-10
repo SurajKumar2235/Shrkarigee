@@ -1,0 +1,132 @@
+.footer {
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    margin-top: 100px;
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+
+.footer-content-left h1 {
+    color: #ddaf6a;
+    font-size: 45px;
+}
+
+.footer-content-left span {
+    color: darkgoldenrod;
+    font-size: 45px;
+}
+
+.footer-content-left, .footer-content-right, .footer-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.footer-content-left li, .footer-content-right li, .footer-content-center li {
+    list-style: none;
+    cursor: pointer;
+    color: #d9d9d9;
+}
+
+/* Adjusting spacing for the company section specifically */
+.footer-content-center ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content-center li {
+    margin-bottom: 10px; /* Default spacing for list items */
+    line-height: 1.5; /* Ensures consistent spacing between lines */
+}
+
+.footer-content-center li:nth-child(3) {
+    margin-bottom: 15px; /* Extra spacing between "Terms and Conditions" and "Privacy Policy" */
+}
+
+.footer-content-right h2, .footer-content-center h2 {
+    color: white;
+}
+
+.footer-social-icons img {
+    cursor: pointer;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: grey;
+    border: none;
+}
+
+:root .footer {
+    background-color: #252323;
+}
+
+.lightcolors .footer {
+    background-color: #323232;
+}
+
+:root .tomatologofooter {
+    filter: var(--logos-filter); 
+}
+
+.lightcolors .tomatologofooter {
+    filter: none; 
+}
+.footer-logo {
+  width: auto; /* Adjust width */
+  height: auto; /* Adjust height */
+  display: block; /* Ensure it's visible */
+}
+
+
+.footer-registration {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+    margin-top: 20px;
+  }
+  
+  .footer-logo {
+    width: px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ccc;
+    margin-bottom: 5px; /* Adds space between logo and text */
+  }
+  
+  .footer-registration p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0;
+  }
+  
+/* Responsive styling */
+@media (max-width: 750px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-copyright {
+        text-align: center;
+        padding-bottom: 10px; /* Added padding for better spacing on mobile */
+    }
+}
+

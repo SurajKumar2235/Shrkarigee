@@ -1,0 +1,89 @@
+.track-order-container {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.track-order-content {
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgb(36, 35, 35);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.track-order-content h2 {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.track-order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border: 2px solid grey;
+  padding: 40px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.track-order-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-order-btn, .help-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-order-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.help-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .track-order-content {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .track-order-item {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .track-order-item img {
+      width: 60px;
+      height: 60px;
+  }
+
+  .order-actions {
+      flex-direction: column;
+  }
+
+  .cancel-order-btn, .help-btn {
+      width: 100%;
+      margin-top: 10px;
+  }
+}

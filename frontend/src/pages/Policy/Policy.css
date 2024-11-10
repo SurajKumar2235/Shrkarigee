@@ -1,0 +1,71 @@
+/* Base styles */
+.policy-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Light and dark mode styles */
+  .policy-container.light {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .policy-container.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  /* Toggle button styling */
+  .toggle-mode {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-mode button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-mode button:hover {
+    background-color: #555;
+  }
+  
+  h1, h2 {
+    color: #da9b2c; /* Premium color accent */
+  }
+  
+  .policy-section {
+    margin-bottom: 20px;
+  }
+  
+  .policy-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .policy-section li {
+    margin: 8px 0;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .policy-container {
+      padding: 10px;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+    }
+  }

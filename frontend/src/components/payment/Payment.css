@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styles */
+.payment-container {
+  display: flex;
+  flex-direction: column; /* Stack vertically on smaller screens */
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f5f5; /* Light background for light mode */
+  border-radius: 8px;
+}
+
+/* Product Details Section */
+.product-details {
+  flex: 1;
+  padding: 1rem;
+  background-color: #ffffff; /* Light background for sections in light mode */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Payment Method Section */
+.payment-method {
+  flex: 1;
+  padding: 1rem;
+  background-color: #ffffff; /* Light background for sections in light mode */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Button Styles */
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background for the body */
+  color: #e0e0e0;
+}
+
+body.dark-mode .payment-container {
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+}
+
+body.dark-mode .product-details,
+body.dark-mode .payment-method {
+  background-color: #2a2a2a;
+  color: #e0e0e0; /* Light text color for better readability */
+  border: 1px solid #444;
+}
+
+body.dark-mode button {
+  background-color: #66bb6a;
+  color: #ffffff;
+}
+
+body.dark-mode ul li {
+  color: #e0e0e0;
+}
+
+body.dark-mode h2, body.dark-mode p {
+  color: #ffcc00; /* Bright yellow for headings to improve visibility */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .payment-container {
+    flex-direction: row; /* Row layout for larger screens */
+  }
+}
+
+@media (max-width: 599px) {
+  /* Ensure Product Details is shown above Payment Method on mobile view */
+  .product-details {
+    order: -1; /* Place product details at the top */
+  }
+  
+  /* Ensure Payment Method appears below Product Details */
+  .payment-method {
+    order: 1; /* Place payment method after product details */
+  }
+}

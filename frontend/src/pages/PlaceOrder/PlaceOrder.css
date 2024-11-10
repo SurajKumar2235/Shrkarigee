@@ -1,0 +1,123 @@
+/* Container and General Layout */
+.place-order {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+/* Left Section */
+.place-order-left {
+    width: 100%;
+    max-width: 500px;
+}
+
+.place-order-left .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+/* Input Fields */
+.place-order-left input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+    box-sizing: border-box;
+}
+
+/* Multi-Fields (Two Fields in One Line on Desktop) */
+.place-order-left .multi-fields {
+    display: flex;
+    gap: 10px;
+}
+
+/* Right Section */
+.place-order-right {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Cart Total Button */
+.place-order .cart-total button {
+    margin-top: 30px;
+}
+
+/* Dark Mode Input Backgrounds */
+:root .emaill,
+:root .streett,
+:root .phonee {
+    background-color: black;
+    color: white;
+}
+
+/* Light Mode Input Backgrounds */
+.lightcolors .emaill,
+.lightcolors .streett,
+.lightcolors .phonee {
+    background-color: white;
+    color: black;
+}
+
+/* Multi-Fields Input Styles */
+:root .multi-fields input {
+    background-color: black;
+    color: white;
+}
+:root .multi-fields input::placeholder {
+    color: white;
+}
+.lightcolors .multi-fields input {
+    background-color: white;
+    color: black;
+}
+.lightcolors .multi-fields input::placeholder {
+    color: black;
+}
+
+/* Title Colors */
+:root .title {
+    color: white;
+}
+.lightcolors .title {
+    color: black;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+    /* Stack the left and right sections vertically */
+    .place-order {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    /* Full-width for left and right sections */
+    .place-order-left,
+    .place-order-right {
+        max-width: 100%;
+    }
+
+    /* Adjust title for mobile */
+    .place-order-left .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Make each input in multi-fields full width */
+    .place-order-left .multi-fields {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Adjust Cart Total Button */
+    .place-order .cart-total button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,64 @@
+.about-container {
+  max-width: 800px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  background-color: var(--bg-color); /* Use CSS variable for light/dark mode */
+  color: var(--text-color); /* Use CSS variable for text color */
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme changes */
+}
+
+h1, h2, h3 {
+  color: #ffcc00; /* Gold color for headings to make them stand out */
+}
+
+p {
+  margin: 10px 0; /* Adds margin for paragraph spacing */
+}
+
+.footer-social-icons {
+  margin-top: 20px; /* Space above social icons */
+  display: flex; /* Flexbox for social icons alignment */
+  justify-content: center; /* Center the icons */
+}
+
+.footer-social-icons img {
+  margin: 0 10px; /* Space between icons */
+  width: 30px; /* Set width for social icons */
+  height: 30px; /* Set height for social icons */
+}
+
+/* Center Contact Section */
+.contact-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text inside the container */
+  padding: 20px; /* Add some padding for spacing */
+  min-height: 200px; /* Adjust height as needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 10px; /* Reduce padding on smaller screens */
+    width: 90%; /* Allow more width on small screens */
+  }
+
+  .contact-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Dark Mode Styles */
+:root {
+  --bg-color: #ffffff; /* Light mode background */
+  --text-color: #333333; /* Light mode text color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #333333; /* Dark mode background */
+    --text-color: #ffffff; /* Dark mode text color */
+  }
+}
